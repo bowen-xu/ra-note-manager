@@ -1,0 +1,8 @@
+.note-export-dialog { width: min(440px, calc(100vw - 40px)); padding: 24px; border: 1px solid #dedbd3; border-radius: 12px; color: #343c35; background: #fff; }
+.note-export-dialog::backdrop { background: #20362940; }
+.note-export-dialog h2 { margin: 0; font-size: var(--ui-font-heading); }
+.note-export-dialog p { margin: 12px 0 20px; font-size: var(--ui-font-body); }
+.note-export-dialog label { display: grid; gap: 6px; font-size: var(--ui-font-label); }
+.note-export-dialog input { width: 100%; padding: 9px; border: 1px solid #d8d8ce; border-radius: 6px; font-size: var(--ui-font-body); }
+.note-export-dialog .note-export-browse { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding: 7px 10px; border: 1px solid #d8d8ce; border-radius: 6px; background: #f8f9f6; color: inherit; font-size: var(--ui-font-body); cursor: pointer; }
+.note-export-dialog footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 22px; }
