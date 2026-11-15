@@ -1,6 +1,6 @@
 {
   "name": "@research-assistant/note-manager-plugin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "exports": {
@@ -11,13 +11,17 @@
     "./configuration": "./src/public/configuration.ts"
   },
   "scripts": {
-    "build": "vite build",
-    "typecheck": "tsc -p tsconfig.json"
+    "sdk:install": "node scripts/install-sdk.mjs",
+    "build": "node scripts/build-note-manager-plugin.mjs",
+    "build:frontend": "tsc -p tsconfig.json && vite build",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "pnpm typecheck && pnpm test"
   },
   "dependencies": {
-    "@research-assistant/core": "workspace:*",
-    "@research-assistant/data": "workspace:*",
-    "@research-assistant/workbench-sdk": "workspace:*",
+    "@research-assistant/core": "0.1.0",
+    "@research-assistant/data": "0.1.0",
+    "@research-assistant/workbench-sdk": "0.1.0",
     "lucide-react": "1.28.0"
   },
   "peerDependencies": {
@@ -30,6 +34,8 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.1",
     "typescript": "5.9.3",
-    "vite": "8.2.0"
+    "vite": "8.2.0",
+    "vitest": "4.1.10",
+    "happy-dom": "20.11.1"
   }
 }
