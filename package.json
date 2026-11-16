@@ -19,7 +19,8 @@
     "check": "pnpm typecheck && pnpm test",
     "dev:preview": "pnpm --dir preview dev",
     "build:preview": "pnpm --dir preview build",
-    "typecheck:preview": "pnpm --dir preview typecheck"
+    "typecheck:preview": "pnpm --dir preview typecheck",
+    "test:preview": "pnpm --dir preview test"
   },
   "dependencies": {
     "@research-assistant/core": "0.1.0",
