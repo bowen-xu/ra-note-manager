@@ -22,3 +22,7 @@ RA_WORKBENCH_SDK_DIRECTORY=/path/to/workbench-web-dist pnpm test
 UI 测试消费 Workbench 已构建的 /sdk/v1/，沿用生产包相同的 external 路径映射。纯领域测试使用本工程夹具。涉及 Core 私有夹具或多个工程的回归由主仓库 integration/ 执行。
 
 笔记正文、资产、索引、保存和 HBS 由 Core 拥有，本插件管理同一资源范围中的目录和业务流程。
+
+## 构建缓存与产物
+
+标准构建入口复用通过完整性校验的既有包。产物在本工程 `artifacts/<kind>/<内容哈希>/package/`，当前入口在 `artifacts/<kind>/latest.json`。回执随产物保存，`.cache/build` 保存索引，`.cache/logs` 保存日志，`.cache/work` 为完成后清理的隔离工作目录。清理编译缓存后仍可复用已保存的当前包。
