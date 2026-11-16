@@ -78,3 +78,6 @@ temp/
 
 # Versioned public dependency artifacts
 /.dependencies/
+
+# Immutable published build packages
+/artifacts/

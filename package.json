@@ -16,7 +16,10 @@
     "build:frontend": "tsc -p tsconfig.json && vite build",
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "check": "pnpm typecheck && pnpm test"
+    "check": "pnpm typecheck && pnpm test",
+    "dev:preview": "pnpm --dir preview dev",
+    "build:preview": "pnpm --dir preview build",
+    "typecheck:preview": "pnpm --dir preview typecheck"
   },
   "dependencies": {
     "@research-assistant/core": "0.1.0",

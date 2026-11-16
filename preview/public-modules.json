@@ -1,0 +1,66 @@
+[
+  {
+    "name": "note-favorites",
+    "source": "src/features/notes/workspace/NoteFavorites.tsx"
+  },
+  {
+    "name": "notes-workspace",
+    "source": "src/features/notes/NotesWorkspace.tsx"
+  },
+  {
+    "name": "use-unified-note-index",
+    "source": "src/features/notes/workspace/useUnifiedNoteIndex.ts"
+  },
+  {
+    "name": "note-library-import",
+    "source": "src/features/notes/transfer/noteLibraryImport.ts"
+  },
+  {
+    "name": "note-favorite-actions",
+    "source": "src/features/notes/workspace/noteFavoriteActions.ts"
+  },
+  {
+    "name": "note-bulk-actions",
+    "source": "src/features/notes/workspace/noteBulkActions.ts"
+  },
+  {
+    "name": "note-navigation-actions",
+    "source": "src/features/notes/workspace/noteNavigationActions.ts"
+  },
+  {
+    "name": "configuration",
+    "source": "src/public/configuration.ts"
+  },
+  {
+    "name": "workspace",
+    "source": "src/public/workspace.ts"
+  },
+  {
+    "name": "notes-explorer",
+    "source": "src/features/notes/workspace/NotesExplorer.tsx"
+  },
+  {
+    "name": "manifest",
+    "source": "src/public/manifest.ts"
+  },
+  {
+    "name": "note-library-export",
+    "source": "src/features/notes/transfer/noteLibraryExport.ts"
+  },
+  {
+    "name": "note-manager-continuity.browser",
+    "source": "preview/src/app/notes/NoteManagerContinuity.browser.tsx"
+  },
+  {
+    "name": "catalog",
+    "source": "preview/catalog.ts"
+  },
+  {
+    "name": "public",
+    "source": "preview/public.ts"
+  },
+  {
+    "name": "contracts",
+    "source": "src/public/contracts.ts"
+  }
+]
