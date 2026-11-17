@@ -3,43 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "exports": {
-    ".": "./src/index.ts",
-    "./workspace": "./src/public/workspace.ts",
-    "./contracts": "./src/public/contracts.ts",
-    "./manifest": "./src/public/manifest.ts",
-    "./configuration": "./src/public/configuration.ts"
-  },
-  "scripts": {
-    "sdk:install": "node scripts/install-sdk.mjs",
-    "build": "node scripts/build-note-manager-plugin.mjs",
-    "build:frontend": "tsc -p tsconfig.json && vite build",
-    "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run",
-    "check": "pnpm typecheck && pnpm test",
-    "dev:preview": "pnpm --dir preview dev",
-    "build:preview": "pnpm --dir preview build",
-    "typecheck:preview": "pnpm --dir preview typecheck",
-    "test:preview": "pnpm --dir preview test"
-  },
-  "dependencies": {
-    "@research-assistant/core": "0.1.0",
-    "@research-assistant/data": "0.1.0",
-    "@research-assistant/workbench-sdk": "0.1.0",
-    "lucide-react": "1.28.0"
-  },
-  "peerDependencies": {
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
-  },
-  "devDependencies": {
-    "@types/node": "25.0.3",
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "6.0.1",
-    "typescript": "5.9.3",
-    "vite": "8.2.0",
-    "vitest": "4.1.10",
-    "happy-dom": "20.11.1"
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24.0.0"
   }
 }
